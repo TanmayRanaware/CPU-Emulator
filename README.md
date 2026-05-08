@@ -159,11 +159,6 @@ CPU Architecture Diagram
 - **Debuggability**: Registers, memory, and complete state are easy to inspect
 - **Extensibility**: Instruction set and components can be expanded easily
 
-## Videos
-
-- Fibonacci Walk Through: Fibonacci Walkthrough
-- Architecture: Architecture
-
 ## Notes
 
 - Instructions are 16 bits wide
