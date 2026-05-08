@@ -1,4 +1,4 @@
-# Simple CPU Emulator
+# CPU Emulator
 
 A complete CPU emulator written in C++ with a modular architecture.  
 The project includes a custom instruction set, a full assembler, and sample assembly programs.
@@ -174,4 +174,4 @@ CPU Architecture Diagram
 
 ## License
 
-This project is part of a course assignment.
+This project is part of a System Software(CMPE220) Course assignment.
