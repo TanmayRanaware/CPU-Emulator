@@ -119,7 +119,7 @@ Coordinates the fetch-decode-execute cycle, controls instruction flow, and updat
 
 ## Instruction Set
 
-See `docs/ISA.md` for the full instruction set reference.
+See [docs/ISA.md](docs/ISA.md) for complete instruction set documentation.
 
 Core instruction groups:
 
@@ -146,9 +146,11 @@ Shows Fetch/Compute/Store style execution by counting from 10 down to 0.
 
 ## Architecture
 
-For detailed architecture notes, see `docs/CPU_SCHEMATIC.md`.
+See [docs/CPU_SCHEMATIC.md](docs/CPU_SCHEMATIC.md) for detailed architecture documentation.
 
 ### Architecture Diagram
+
+![CPU Architecture Diagram](docs/architecture_diagram.png)
 
 CPU Architecture Diagram
 ### Video
