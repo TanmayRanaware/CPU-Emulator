@@ -151,6 +151,8 @@ For detailed architecture notes, see `docs/CPU_SCHEMATIC.md`.
 ### Architecture Diagram
 
 CPU Architecture Diagram
+### Video
+Video link:
 
 ## Design Principles
 
