@@ -1,3 +1,1 @@
-cpu_emulator
-*.dSYM/
-*.o
+.DS_Store
