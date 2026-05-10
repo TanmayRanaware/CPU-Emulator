@@ -160,9 +160,9 @@ C reference implementation: `programs/factorial.c`
 CPU Architecture Diagram
 
 ### Video
- **Fibonacci walkthrough**
- [![Architecture](https://img.shields.io/badge/Fibonacci%20Walkthrough%20Diagram-Google%20Drive-green)](https://drive.google.com/file/d/14omYAijaldmK3WM8RuAbFCw-hSuF3Tkz/view?usp=sharing)
- **Architecture**:
+1.  **Fibonacci walkthrough**
+ [![Architecture](https://img.shields.io/badge/Fibonacci%20Walkthrough-Google%20Drive-blue)](https://drive.google.com/file/d/14omYAijaldmK3WM8RuAbFCw-hSuF3Tkz/view?usp=sharing)
+2.  **Architecture**:
 [![Architecture](https://img.shields.io/badge/Architecture%20Diagram-Google%20Drive-green)](https://drive.google.com/file/d/1Tq08obCwoHe9jN2yudj7vT-nm12yfsom/view?usp=sharing)
 
 
