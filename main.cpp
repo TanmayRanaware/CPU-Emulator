@@ -159,24 +159,27 @@ int main(int argc, char* argv[]) {
 
             emu.print_ram(addr, len);
 
-        } else if (cmd == "dump") {
+        } else if (cmd == "filedump") {
+            // filedump [filename] [start_addr] [length]
+            std::string filename = "memdump.txt";
             uint16_t addr = 0x0000;
-            uint16_t len = 256;
-            std::string addr_str, len_str;
-            ss >> addr_str >> len_str;
-
+            uint16_t len = 0xFFFF;
+            std::string fname_str, addr_str, len_str;
+            ss >> fname_str >> addr_str >> len_str;
+ 
+            if (!fname_str.empty()) filename = fname_str;
+ 
             if (!addr_str.empty()) {
-                addr = addr_str.rfind("0x", 0) == 0
-                    ? static_cast<uint16_t>(std::stoul(addr_str, nullptr, 16))
-                    : static_cast<uint16_t>(std::stoul(addr_str));
+                if (addr_str.substr(0, 2) == "0x") {
+                    addr = static_cast<uint16_t>(std::stoul(addr_str, nullptr, 16));
+                } else {
+                    addr = static_cast<uint16_t>(std::stoul(addr_str));
+                }
             }
-
             if (!len_str.empty()) {
                 len = static_cast<uint16_t>(std::stoul(len_str));
             }
-
-            emu.print_ram(addr, len);
-
+            emu.memory_dump(filename, addr, len);
         } else if (cmd == "dec" || cmd == "decimal" || cmd == "print") {
             uint16_t addr = 0x0040;
             uint16_t count = 10;
