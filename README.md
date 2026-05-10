@@ -84,6 +84,23 @@ R1: 0x0000 (0)
 > run
 > state
 ```
+## Factorial example
+```text
+# Build
+make
+
+# Run with trace to see every instruction
+./cpu_emulator programs/factorial.asm run
+
+# Or interactive mode to inspect step by step
+./cpu_emulator
+> load programs/factorial.asm
+> trace on
+> run
+> dec 0x0100 1        # should show 120
+> spr                 # SP should be back at 0xFFFF (stack fully unwound)
+> ram 0xFDEF 32       # inspect software stack area
+```
 
 ## CPU Components
 
@@ -159,7 +176,7 @@ C reference implementation: `programs/factorial.c`
 
 CPU Architecture Diagram
 
-### Video
+# Demo Videos
 1.  **Fibonacci walkthrough**
  [![Fibonnaci](https://img.shields.io/badge/Fibonacci%20Walkthrough-Google%20Drive-blue)](https://drive.google.com/file/d/14omYAijaldmK3WM8RuAbFCw-hSuF3Tkz/view?usp=sharing)
 2.  **Architecture**:
