@@ -10,6 +10,8 @@
 #include <string>
 #include <iomanip>
 #include <iostream>
+#include <fstream>
+#include <cctype>
 
 namespace emulator {
 
@@ -131,10 +133,40 @@ public:
     
     // Memory dump to file
     void memory_dump(const std::string& filename, uint16_t start = 0, uint16_t length = 0xFFFF) const {
-        // This would write memory to file - simplified for now
-        (void)start;  // Suppress unused parameter warning
-        (void)length; // Suppress unused parameter warning
-        std::cout << "Memory dump to " << filename << " (not implemented)" << std::endl;
+        std::ofstream file(filename, std::ios::binary);
+    if (!file.is_open()) {
+        std::cerr << "Error: Cannot open file for memory dump: " << filename << std::endl;
+        return;
+    }
+
+    // Write hex dump to file
+    file << "=== Memory Dump ===\n";
+    file << "Start: 0x" << std::hex << std::setw(4) << std::setfill('0') << start << "\n";
+    file << "Length: " << std::dec << length << " bytes\n\n";
+
+    for (uint16_t i = 0; i < length; i += 16) {
+        uint16_t addr = start + i;
+
+        // Address
+        file << std::hex << std::setw(4) << std::setfill('0') << addr << ": ";
+
+        // Hex bytes
+        for (uint16_t j = 0; j < 16 && (i + j) < length; j++) {
+            uint8_t byte = memory.read_byte(addr + j);
+            file << std::hex << std::setw(2) << std::setfill('0') << (int)byte << " ";
+        }
+
+        // ASCII representation
+        file << " | ";
+        for (uint16_t j = 0; j < 16 && (i + j) < length; j++) {
+            uint8_t byte = memory.read_byte(addr + j);
+            file << (char)(std::isprint(byte) ? byte : '.');
+        }
+        file << "\n";
+    }
+
+        file.close();
+        std::cout << "Memory dump written to: " << filename << std::endl;
     }
 };
 
