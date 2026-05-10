@@ -26,7 +26,7 @@ void print_help() {
     std::cout << "gpr              - Print General Purpose Registers" << std::endl;
     std::cout << "spr              - Print Special Purpose Registers" << std::endl;
     std::cout << "ram [addr] [len] - Print RAM dump (default: 0x0000, 256 bytes)" << std::endl;
-    std::cout << "dump [addr] [len]- Alias for RAM dump" << std::endl;
+    std::cout << "filedump [file] [addr] [len] - Dump memory to file (default: memdump.txt, 0x0000, 65535)" << std::endl;
     std::cout << "dec [addr] [cnt] - Print memory as decimal numbers (default: 0x0040, 10 words)" << std::endl;
     std::cout << "state            - Print complete CPU state" << std::endl;
     std::cout << "trace on/off     - Enable/disable instruction tracing" << std::endl;
