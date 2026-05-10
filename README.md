@@ -161,9 +161,11 @@ CPU Architecture Diagram
 
 ### Video
 1.  **Fibonacci walkthrough**
- [![Architecture](https://img.shields.io/badge/Fibonacci%20Walkthrough-Google%20Drive-blue)](https://drive.google.com/file/d/14omYAijaldmK3WM8RuAbFCw-hSuF3Tkz/view?usp=sharing)
+ [![Fibonnaci](https://img.shields.io/badge/Fibonacci%20Walkthrough-Google%20Drive-blue)](https://drive.google.com/file/d/14omYAijaldmK3WM8RuAbFCw-hSuF3Tkz/view?usp=sharing)
 2.  **Architecture**:
 [![Architecture](https://img.shields.io/badge/Architecture%20Diagram-Google%20Drive-green)](https://drive.google.com/file/d/1Tq08obCwoHe9jN2yudj7vT-nm12yfsom/view?usp=sharing)
+3.  **Factorial walkthrough**
+[![Factorial](https://img.shields.io/badge/Factorial%20Walkthrough-Google%20Drive-orange)](https://drive.google.com/file/d/1mSgyoKAXHgcM0MOoe4lMGJcQXmJy2QE4/view?usp=sharing)
 
 
 
