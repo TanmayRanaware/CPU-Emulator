@@ -161,7 +161,7 @@ CPU Architecture Diagram
 
 ### Video
  **Architecture**:
-[![Architecture](https://img.shields.io/badge/Architecture%20Diagram-Google%20Drive-green)(https://drive.google.com/file/d/1Tq08obCwoHe9jN2yudj7vT-nm12yfsom/view?usp=sharing)]
+[![Architecture](https://img.shields.io/badge/Architecture%20Diagram-Google%20Drive-green)](https://drive.google.com/file/d/1Tq08obCwoHe9jN2yudj7vT-nm12yfsom/view?usp=sharing)
 
 ## Design Principles
 
