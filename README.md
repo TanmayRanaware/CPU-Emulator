@@ -117,10 +117,6 @@ Coordinates the fetch-decode-execute cycle, controls instruction flow, and updat
 - Byte-addressable, word-aligned
 - Memory-mapped I/O at `0xFF00-0xFFFF`
 
-## Instruction Set
-
-See [docs/ISA.md](docs/ISA.md) for complete instruction set documentation.
-
 Core instruction groups:
 
 - Arithmetic: `ADD`, `SUB`
@@ -144,15 +140,25 @@ Calculates the first 10 Fibonacci values and stores results in memory.
 
 Shows Fetch/Compute/Store style execution by counting from 10 down to 0.
 
-## Architecture
+### Factorial (`programs/factorial.asm`)
 
-See [docs/CPU_SCHEMATIC.md](docs/CPU_SCHEMATIC.md) for detailed architecture documentation.
+Recursive factorial of 5 using CALL/RET instructions. Demonstrates function calls,
+stack frames, and recursion on the CPU.
+C reference implementation: `programs/factorial.c`
+
+## Documentation
+
+- [docs/ISA.md](docs/ISA.md) - Full instruction set reference
+- [docs/CPU_SCHEMATIC.md](docs/CPU_SCHEMATIC.md) - CPU architecture reference
+- [docs/MEMORY_LAYOUT.md](docs/MEMORY_LAYOUT.md) - Memory layout, function calls, and recursion (factorial)
+
 
 ### Architecture Diagram
 
 ![CPU Architecture Diagram](docs/architecture_diagram.png)
 
 CPU Architecture Diagram
+
 ### Video
 Video link:
 
